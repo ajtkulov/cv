@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+
+
+
+% moderncv themes
+%\moderncvtheme[gray]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+
+\usepackage[scale=0.8]{geometry}
+
+\firstname{Pavel}
+\familyname{Aitkulov}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+%\address{Izhevsk}{Russia}    % optional, remove the line if not wanted
+\mobile{+1-408-463-80-82}                    % optional, remove the line if not wanted
+% \mobile{+7-909-052-31-13}                    % optional, remove the line if not wanted
+%\phone{+7-3412-61-23-35}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ajtkulov@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+
+
+% \quote{Curriculum Vitae}                 
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\vspace{25pt}
+
+$\circ$ Experienced Data Engineer with a strong background in machine learning, functional programming, and advanced algorithms. Proven ability to design and implement optimized data pipelines, perform data analysis, and deploy machine learning models in a production environment.
+
+\vspace{25pt}
+
+\section{Experience}
+\cventry{01.2020--now}{Senior Software Engineer}{Dun \& Bradstreet, San Jose, CA, USA}{}{}{
+  Firmographics, B2B. Data Engineering, Fuzzy search, Clustering.
+  % \newline{}%
+  % Achievements:%
+  \begin{itemize}%
+    \item Implemented Spelling correction module. Trie as BloomFilters, Count-min-sketch for language models: $7M$ unique words, $55M$ pairs, $55M$ triples. Increased search hit-rate by 4\%.
+    \item Researched and developed de-duplication method for $450M$ company profiles. Locality sensitive hashing, MinHash, Trie as BloomFilters for Hamming distance. Found 7M exact and fuzzy duplicates.
+    \item Implemented Verification and Identification services, check that web domain belongs to company; find out web domain by company profile. $60M$ websites scale. 
+  \end{itemize}
+  Technologies: Scala, Python, Postgres, ML, AWS.
+}
+\cventry{07.2014--01.2020}{Senior Software Engineer}{Piano Media, Izhevsk, Russia}{}{}{
+  Paywall and subsciption business.
+  Distributed systems, ML, Reports, DSL, Streaming. \\
+  Parameters: $k \cdot 100\ Tb$ data, $k \cdot 10$ nodes, $5000\, rps_{avg}$, $8000\, rps_{peak}$ daily.
+  % \newline{}%
+  % Achievements:%
+  \begin{itemize}%
+    \item Led and built various types of analytic reports, real-time, on-demand, customizable reports based on DSL. Connected Clojure-based DSL with Spark and BigQuery.
+    \item Implemented User Segmentation Engine, $k \cdot 10^8$ of users, used Bloom filter as KV-store.
+    \item Launched Likely-to-subscribe ML-project, $k \cdot 10 ^ 7$ of users, Python/R.
+  \end{itemize}
+  Technologies: Scala, Clojure, Unix, Spark, HDFS, DSL, AWS, Akka, Kafka, Catboost, BigQuery.
+}
+\cventry{08.2013--07.2014}{Researcher, Senior Algorithm Engineer}{Huawei Research, Moscow, Russia}{}{}{
+  Nested data parallelism model, distributed systems, map-reduce, optimization compiler, backend codegerator, domain specific languages.
+  % \newline{}%
+  % Achievements:%
+  \begin{itemize}%
+    \item Implemented Spark backend for nested data parallelism model.
+    \item Researched and developed Efficient custom Spark RDD's for NDP-primitives.
+  \end{itemize}
+  Technologies: Scala, Spark, Distributed Programming, C++.
+}
+\cventry{12.2007--08.2013}{Senior Software Engineer}{Rosneft, Izhevsk, Russia}{}{}{
+  Oil mining, forecast and monitoring system. OLAP, $10^{6}$ points per document, up to 15 dimensions, DSL, Calculations.
+  % \newline{}%
+  % Achievements:%
+  \begin{itemize}%
+    \item Carried out multithreading evaluations.
+    \item Pioneered testing and verification via Partial evaluation.
+  \end{itemize}
+  Technologies: C\#, Multithreading, DSL, Partial evaluations.
+}
+
+\section{Education}
+\cventry{2010}{Ph.D.}{Udmurt State University, Institute of Control Sciences V.A. Trapeznikov Academy of Sciences}{Izhevsk, Moscow}{Russia}{Key words: online string algorithms, string matching, text indexing, dynamic suffix arrays, data compression. Advisor: prof.~Nepejvoda~N.~N.} 
+\cventry{2006}{MS in Computer Science}{Udmurt State University}{Izhevsk}{Russia}{Summa cum laude. 
+Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, static verification, compiler)
+}
+
+\newpage
+
+\section{CS Interests}
+\cvline{}{\small graph theory, number theory, formal languages, string matching, data structures}
+\cvline{}{\small domain-specific languages, functional programming}
+
+\section{Proficiency}
+\cvcomputer{Data}{Spark, Druid, Kafka, Rabbitmq, Big~Query, Akka}{ML}{LogReg, CatBoost, Transformers}
+\cvcomputer{Infrastructure}{AWS: S3, EC2, LB, ECS; Docker}{Culture}{Tests, CI/CD, Code Reviews, Dashboards, Monitoring}
+
+
+\section{ACM ICPC}
+\cvcomputer{coach}{2012, World Final, Poland, Warsaw}{participant}{2005, 2006, NEERC}
+
+\section{Schools and conferences}
+\cvline{DSLDI 2015}{\small Summer School on DSL Design and Implementation, Aug 2015, Lausanne, Switzerland}
+\cvline{EWSCS 2014}{\small Estonian Winter School in Computer Science, Mar 2014, Palmse, Estonia}
+\cvline{ALMADA~2013}{\small School on Algorithms for Massive Data, Aug 2013, Moscow, Russia}
+\cvline{Russir 2011}{\small Russian Summer School in Information Retrieval, Aug 2011, Saint Petersburg, Russia}
+\cvline{SSSEV 2011}{\small Summer School in Software Engineering and Verification, Jul 2011, Moscow, Russia}
+\cvline{Russir 2010}{\small Russian Summer School in Information Retrieval, Sep 2010, Voronezh, Russia}
+\cvline{conferences}{\href{http://www.highload.ru/}{HighLoad++-2019}, \href{http://www.highload.ru/}{HighLoad++-2015}, \href{http://www.highload.ru/}{HighLoad++-2014}, \href{http://meta2016.pereslavl.ru}{META-2016}, \href{http://meta2014.pereslavl.ru}{META-2014}, \href{http://2013.nscf.ru/}{NSKF-2013}, \href{http://2014.nscf.ru/}{NSKF-2014}, \href{http://2014.ulcamp.ru/}{ULMCAMP-2014}, \href{http://scalar-conf.com/}{Scalar-2017}, \href{https://nastachku.ru/}{STACHKA-2017}, \href{http://www.lambda.world/}{LambdaWorld-2017}, \href{https://fby.by/}{f(by)-2017}, \href{http://scalar-conf.com/}{Scalar-2018}, \href{http://scalar-conf.com/}{Scalar-2019}, \href{https://fby.by/}{f(by)-2019}, \href{https://fby.by/}{f(by)-2020}, \href{https://www.fpure.events/}{fpure-2019}, \href{https://pybay.com/}{PyBay-2022}} 
+\section{Main publications}
+\cvline{}{D. V. Urbanovich, P. G. Ajtkulov, ''Simple algorithm to maintain dynamic suffix array for text indexes'', RuSSIR/EBDT, (2011), 40-45.}
+\cvline{}{P. G. Ajtkulov, ''Symbol array processing'', UBS, 28 (2010), 126-178. (rus)}
+\section{Talks}
+\cvline{HighLoad-2019}{Probabilistic data structures, \href{https://www.youtube.com/watch?v=Vx-l7KiIYuM&t}{https://www.youtube.com/watch?v=Vx-l7KiIYuM}, \href{https://www.highload.ru/moscow/2019/abstracts/5944}{https://www.highload.ru/moscow/2019/abstracts/5944}}
+\cvline{EWSCS 2014}{19th Estonian Winter School in Computer Science, \href{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks}{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks} Online Suffix Array Construction}
+
+\section{Collaboration}
+\cvline{Dissernet}{\href{https://www.dissernet.org/}{https://www.dissernet.org/} Plagiarism detection in Ph.D. theses and articles in Russia. Algorithms on strings, ML/NLP, 1.2M theses and 2.6M articles, 500Gb raw texts.}
+
+\section{Misc}
+\cvline{Translator}{\small Foundations for Programming Languages, John C. Mitchell. RCD press, 2010}
+\cvline{Running}{Marathon: \href{https://www.athlinks.com/event/3241/results/Event/1036173/Course/2307831/Bib/5668}{3h22m}, $\frac{1}{2}$ marathon: 1h38m, 10km: 44m30s}
+\cvline{Chess}{Max Elo: 2118}
+
+
+% \section{Work permit}
+% \cvline{USA}{O-1 visa, since 01/2022}
+% \cvline{Russia}{citizenship}
+
+\end{document}
