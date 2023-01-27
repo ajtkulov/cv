@@ -22,6 +22,8 @@
 % adjust the page margins
 
 \usepackage[scale=0.8]{geometry}
+\usepackage{lastpage}
+\rfoot{\addressfont\itshape\textcolor{black}{Page \thepage\ of \pageref{LastPage}}}
 
 \firstname{Pavel}
 \familyname{Aitkulov}
@@ -29,10 +31,7 @@
 %\address{Izhevsk}{Russia}    % optional, remove the line if not wanted
 \mobile{+1-408-463-80-82}                    % optional, remove the line if not wanted
 % \mobile{+7-909-052-31-13}                    % optional, remove the line if not wanted
-%\phone{+7-3412-61-23-35}                      % optional, remove the line if not wanted
-%\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{ajtkulov@gmail.com}                      % optional, remove the line if not wanted
-%\homepage{homepage (optional)}                % optional, remove the line if not wanted
 
 
 % \quote{Curriculum Vitae}                 
@@ -44,56 +43,60 @@
 \begin{document}
 \maketitle
 
-\vspace{25pt}
+\vspace{15pt}
 
-$\circ$ Experienced Data Engineer with a strong background in machine learning, functional programming, and advanced algorithms. Proven ability to design and implement optimized data pipelines, perform data analysis, and deploy machine learning models in a production environment.
+$\circ$ Experienced Software Engineer with a strong track record solving business problems using advanced algorithms, machine learning, and functional programming
+
+\vspace{2pt}
+
+$\circ$ Proven ability to design and implement optimized data pipelines, perform data analysis, and deploy machine learning models in a production environment
 
 \vspace{25pt}
 
 \section{Experience}
-\cventry{01.2020--now}{Senior Software Engineer}{Dun \& Bradstreet, San Jose, CA, USA}{}{}{
-  Firmographics, B2B. Data Engineering, Fuzzy search, Clustering.
+\cventry{01.2020--now}{Senior Software Engineer}{Dun \& Bradstreet, San Jose, CA}{}{}{
+  Company profiles, B2B. Data Engineering, Fuzzy search, Clustering
   % \newline{}%
   % Achievements:%
   \begin{itemize}%
-    \item Implemented Spelling correction module. Trie as BloomFilters, Count-min-sketch for language models: $7M$ unique words, $55M$ pairs, $55M$ triples. Increased search hit-rate by 4\%.
-    \item Researched and developed de-duplication method for $450M$ company profiles. Locality sensitive hashing, MinHash, Trie as BloomFilters for Hamming distance. Found 7M exact and fuzzy duplicates.
-    \item Implemented Verification and Identification services, check that web domain belongs to company; find out web domain by company profile. $60M$ websites scale. 
+    \item Increased search hit rate by 4\% by developing Spelling correction module. Applied Trie as BloomFilters, Count-min-sketch for language models. $7M$ unique words, $55M$ pairs, $55M$ triples.
+    \item Researched and developed a de-duplication method for $450M$ company profiles. Locality sensitive hashing, MinHash, Trie as BloomFilters for Hamming distance. Found 7M exact and fuzzy duplicates.
+    \item Implemented Verification and Identification services that match web domains to companies. $60M$ websites scale. 
   \end{itemize}
-  Technologies: Scala, Python, Postgres, ML, AWS.
+  Technologies: Scala, Python, Postgres, ML, AWS
 }
 \cventry{07.2014--01.2020}{Senior Software Engineer}{Piano Media, Izhevsk, Russia}{}{}{
-  Paywall and subsciption business.
+  Platform for paywall and subscription business.
   Distributed systems, ML, Reports, DSL, Streaming. \\
-  Parameters: $k \cdot 100\ Tb$ data, $k \cdot 10$ nodes, $5000\, rps_{avg}$, $8000\, rps_{peak}$ daily.
+  200 Tb data in total, $5000\, rps_{avg}$, $8000\, rps_{peak}$ daily.
   % \newline{}%
   % Achievements:%
   \begin{itemize}%
-    \item Led and built various types of analytic reports, real-time, on-demand, customizable reports based on DSL. Connected Clojure-based DSL with Spark and BigQuery.
-    \item Implemented User Segmentation Engine, $k \cdot 10^8$ of users, used Bloom filter as KV-store.
-    \item Launched Likely-to-subscribe ML-project, $k \cdot 10 ^ 7$ of users, Python/R.
+    \item Launched Likely-to-Subscribe and Likely-to-Churn ML projects, $10 M$ users
+    \item Led and built a project that provides various types of analytic reports, real-time, on-demand, customizable reports based on DSL. Connected Clojure-based DSL with Spark and BigQuery.
+    \item Implemented User Segmentation Engine, $100 M$ users, used Bloom filter as KV-store
   \end{itemize}
-  Technologies: Scala, Clojure, Unix, Spark, HDFS, DSL, AWS, Akka, Kafka, Catboost, BigQuery.
+  Technologies: Scala, Clojure, Unix, Spark, HDFS, DSL, AWS, Akka, Kafka, Catboost, BigQuery
 }
 \cventry{08.2013--07.2014}{Researcher, Senior Algorithm Engineer}{Huawei Research, Moscow, Russia}{}{}{
-  Nested data parallelism model, distributed systems, map-reduce, optimization compiler, backend codegerator, domain specific languages.
+  Nested data parallelism model, distributed systems, map-reduce, optimization compiler, meta-programming and code generation, domain specific languages
   % \newline{}%
   % Achievements:%
   \begin{itemize}%
-    \item Implemented Spark backend for nested data parallelism model.
-    \item Researched and developed Efficient custom Spark RDD's for NDP-primitives.
+    \item Implemented Spark backend for nested data-parallelism model
+    \item Researched and developed efficient custom Spark RDD's for NDP-primitives
   \end{itemize}
-  Technologies: Scala, Spark, Distributed Programming, C++.
+  Technologies: Scala, Spark, Distributed Programming, C++
 }
 \cventry{12.2007--08.2013}{Senior Software Engineer}{Rosneft, Izhevsk, Russia}{}{}{
-  Oil mining, forecast and monitoring system. OLAP, $10^{6}$ points per document, up to 15 dimensions, DSL, Calculations.
+  Oil mining, forecast, and monitoring system. OLAP, up to $2 M$ data points per document, up to 15 dimensions, DSL, Calculations
   % \newline{}%
   % Achievements:%
   \begin{itemize}%
-    \item Carried out multithreading evaluations.
-    \item Pioneered testing and verification via Partial evaluation.
+    \item Increased calculation speed by 3.5 times using multithreading evaluations
+    \item Pioneered testing and verification via \href{https://en.wikipedia.org/wiki/Partial\_evaluation}{Partial evaluation}
   \end{itemize}
-  Technologies: C\#, Multithreading, DSL, Partial evaluations.
+  Technologies: C\#, Multithreading, DSL, \href{https://en.wikipedia.org/wiki/Partial\_evaluation}{Partial evaluations}
 }
 
 \section{Education}
@@ -108,7 +111,7 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
 \cvline{}{\small graph theory, number theory, formal languages, string matching, data structures}
 \cvline{}{\small domain-specific languages, functional programming}
 
-\section{Proficiency}
+\section{Skills}
 \cvcomputer{Data}{Spark, Druid, Kafka, Rabbitmq, Big~Query, Akka}{ML}{LogReg, CatBoost, Transformers}
 \cvcomputer{Infrastructure}{AWS: S3, EC2, LB, ECS; Docker}{Culture}{Tests, CI/CD, Code Reviews, Dashboards, Monitoring}
 
@@ -132,7 +135,7 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
 \cvline{EWSCS 2014}{19th Estonian Winter School in Computer Science, \href{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks}{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks} Online Suffix Array Construction}
 
 \section{Collaboration}
-\cvline{Dissernet}{\href{https://www.dissernet.org/}{https://www.dissernet.org/} Plagiarism detection in Ph.D. theses and articles in Russia. Algorithms on strings, ML/NLP, 1.2M theses and 2.6M articles, 500Gb raw texts.}
+\cvline{Dissernet}{\href{https://www.dissernet.org/}{https://www.dissernet.org/} Plagiarism detection in Ph.D. theses and articles in Russia. Algorithms on strings, ML/NLP, 1.2M theses and 2.6M articles, 500Gb raw texts}
 
 \section{Misc}
 \cvline{Translator}{\small Foundations for Programming Languages, John C. Mitchell. RCD press, 2010}
