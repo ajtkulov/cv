@@ -61,31 +61,31 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
 }
 
 \section{Skills}
-\cvcomputer{Programming Languages}{Scala, Python, C\#, Java, compiler theory, functional programming}{Culture}{Tests, CI/CD, Code Reviews, Dashboards, Monitoring, Tech Lead for a team of 3}
-\cvcomputer{Data}{Spark, Druid, Kafka, Pulsar, Cassandra, Big~Query, Akka, SQL, Clickhouse, Airflow, ETL}{CS Interests}{graph theory, number theory, formal languages, string matching, data structures, domain-specific languages}
-\cvcomputer{Infrastructure}{AWS, S3, EC2, LB, ECS, Docker, Spinnaker, k8s, Terraform}{ML}{LogReg, CatBoost, NER, CV}
+\cvcomputer{Programming Languages}{Scala, Python, C\#, Java, compiler theory, functional programming, Effect system, ZIO}{Culture}{Tests, CI/CD, Code Reviews, Dashboards, Observability, Monitoring, Tech Lead for a team of 3}
+\cvcomputer{Data}{Spark, Druid, Kafka, Pulsar, Cassandra, Big~Query, Akka, SQL, Clickhouse, Hive, Presto, Airflow, ETL, elastic, search index}{CS Interests}{graph theory, number theory, formal languages, string matching, data structures, domain-specific languages}
+\cvcomputer{Infrastructure}{AWS, S3, EC2, LB, ECS, Docker, Spinnaker, k8s, Terraform}{ML}{LogReg, CatBoost/xgboost, NER, NLP, CV, ANN/KNN}
 
 \section{Experience}
-\cventry{07.2023--now}{Senior Software Engineer}{Disney Streaming, Santa Clara, CA}{}{}{
+\cventry{07.2023--now}{Software/Data Engineer}{Disney Streaming, Santa Clara, CA}{}{}{
   AdTech, infrastructure, big data
   \begin{itemize}%
     \item Designed and implemented internal web applications to manage data pipelines and provide customer reports, 40-50Tb data per day, 11B events per day, 400+ clients.
   \end{itemize}
   Technologies: Scala, Java, Python, AWS, Airflow
 }
-\cventry{01.2020--04.2023}{Senior Software Engineer}{Dun \& Bradstreet, San Jose, CA}{}{}{
+\cventry{01.2020--04.2023}{ML Engineer}{Dun \& Bradstreet, San Jose, CA}{}{}{
   Company profiles, B2B. Data Engineering, Fuzzy search, Clustering
   % \newline{}%
   % Achievements:%
   \begin{itemize}%
     \item Increased search hit rate by 4\% by developing Spelling correction module. Applied Trie as BloomFilters, Count-min-sketch for language models. $7M$ unique words, $55M$ pairs, $55M$ triples.
-    \item Researched and developed a de-duplication method for $450M$ company profiles. Locality sensitive hashing, MinHash, Trie as BloomFilters for Hamming distance. Found 7M exact and fuzzy duplicates.
+    \item Researched and developed a de-duplication method for $600M$ company profiles. Locality sensitive hashing, MinHash, Trie as BloomFilters for Hamming distance. Found 7M exact and fuzzy duplicates.
     \item Implemented Verification and Identification services that match web domains to companies. $60M$ websites scale. 
   \end{itemize}
   Technologies: Scala, Python, Postgres, ML, AWS
 }
-\cventry{07.2014--01.2020}{Senior Software Engineer}{Piano Media, Izhevsk, Russia}{}{}{
-  Platform for paywall and subscription business.
+\cventry{07.2014--01.2020}{Software Engineer}{Piano Media, Izhevsk, Russia}{}{}{
+  AdTech, Platform for paywall and subscription business.
   Distributed systems, ML, Reports, DSL, Streaming. \\
   200 Tb data in total, $5000\, rps_{avg}$, $8000\, rps_{peak}$ daily.
   \begin{itemize}%
@@ -95,15 +95,15 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
   \end{itemize}
   Technologies: Scala, Clojure, Unix, Spark, HDFS, DSL, AWS, Akka, Kafka, Catboost, BigQuery
 }
-\cventry{08.2013--07.2014}{Researcher, Senior Algorithm Engineer}{Huawei Research, Moscow, Russia}{}{}{
-  Nested data parallelism model, distributed systems, map-reduce, optimization compiler, meta-programming and code generation, domain specific languages
+\cventry{08.2013--07.2014}{Researcher, Algorithm Engineer}{Huawei Research, Moscow, Russia}{}{}{
+  RnD, Nested data parallelism model, distributed systems, map-reduce, optimization compiler, meta-programming and code generation, domain specific languages
   \begin{itemize}%
     \item Implemented Spark backend for nested data-parallelism model
     \item Researched and developed efficient custom Spark RDD's for NDP-primitives
   \end{itemize}
   Technologies: Scala, Spark, Distributed Programming, C++
 }
-\cventry{12.2007--08.2013}{Senior Software Engineer}{Rosneft, Izhevsk, Russia}{}{}{
+\cventry{12.2007--08.2013}{Software Engineer}{Rosneft, Izhevsk, Russia}{}{}{
   Oil mining, forecast, and monitoring system. OLAP, up to $2 M$ data points per document, up to 15 dimensions, DSL, Calculations
   \begin{itemize}%
     \item Increased calculation speed by 3.5 times using multithreading evaluations
@@ -123,7 +123,7 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
 \cvline{Russir 2011}{\small Russian Summer School in Information Retrieval, Aug 2011, Saint Petersburg, Russia}
 \cvline{SSSEV 2011}{\small Summer School in Software Engineering and Verification, Jul 2011, Moscow, Russia}
 \cvline{Russir 2010}{\small Russian Summer School in Information Retrieval, Sep 2010, Voronezh, Russia}
-\cvline{conferences}{\href{http://www.highload.ru/}{HighLoad++-2014/2015/2019}, \href{http://meta2016.pereslavl.ru}{META-2014/2016}, \href{http://2013.nscf.ru/}{NSKF-2013/2014}, \href{http://2014.ulcamp.ru/}{ULMCAMP-2014}, \href{http://scalar-conf.com/}{Scalar-2017/2018/2019}, \href{https://nastachku.ru/}{STACHKA-2017}, \href{http://www.lambda.world/}{LambdaWorld-2017}, \href{https://fby.by/}{f(by)-2017/2019/2020}, \href{https://www.fpure.events/}{fpure-2019}, \href{https://pybay.com/}{PyBay-2022/2023}, \href{https://events.linuxfoundation.org/pytorch-conference/}{PyTorch-2023}} 
+\cvline{conferences}{\href{http://www.highload.ru/}{HighLoad++-2014/2015/2019}, \href{http://meta2016.pereslavl.ru}{META-2014/2016}, \href{http://2013.nscf.ru/}{NSKF-2013/2014}, \href{http://2014.ulcamp.ru/}{ULMCAMP-2014}, \href{http://scalar-conf.com/}{Scalar-2017/2018/2019}, \href{https://nastachku.ru/}{STACHKA-2017}, \href{http://www.lambda.world/}{LambdaWorld-2017}, \href{https://fby.by/}{f(by)-2017/2019/2020}, \href{https://www.fpure.events/}{fpure-2019}, \href{https://pybay.com/}{PyBay-2022/2023}, \href{https://events.linuxfoundation.org/pytorch-conference/}{PyTorch-2023}, \href{https://current.confluent.io/}{Current-2024}, \href{https://raysummit.anyscale.com/}{Ray-2024}, \href{https://datastreaming-summit.org/event/north-america-2024}{DataStreaming-2024} \href{https://www.lambdaconf.us/}{LambdaConf-2025} }
 \section{Main publications}
 \cvline{}{\href{https://elar.urfu.ru/bitstream/10995/3710/3/RuSSIR\_2011_04.pdf}{D. V. Urbanovich, P. G. Ajtkulov, ''Simple algorithm to maintain dynamic suffix array for text indexes'', RuSSIR/EBDT, (2011), 40-45.}}
 \cvline{}{\href{https://www.mathnet.ru/links/5def79b9da88e3a1755ed8f497457245/ubs377.pdf}{P. G. Ajtkulov, ''Symbol array processing'', UBS, 28 (2010), 126-178. (rus)}}
@@ -132,11 +132,12 @@ Master thesis: Limited proof programming (Floyd-Hoare logic, annotated program, 
 \cvline{EWSCS 2014}{19th Estonian Winter School in Computer Science, \href{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks}{http://cs.ioc.ee/ewscs/2014/index.php?page=../talks} Online Suffix Array Construction}
 
 \section{Collaboration}
-\cvline{Dissernet}{\href{https://www.dissernet.org/}{https://www.dissernet.org/} Plagiarism detection in Ph.D. theses and articles in Russia. Algorithms on strings, text, and table data analysis. ML/NLP, 1.2M theses and 2.6M articles, 500Gb raw texts. Extra 2000 stolen dissertations and more than 40, 000 articles were founded.}
+\cvline{Dissernet}{\href{https://www.dissernet.org/}{https://www.dissernet.org/} Plagiarism detection in Ph.D. theses and articles in Russia. Algorithms on strings, text, table data analysis, and translation cases. ML/NLP, 1.2M theses and 90M articles, 3.5 Tb raw texts. Extra 2000 stolen dissertations and more than 40, 000 articles were founded.}
+\cvline{Investigative journalism}{Various projects, record linkage, entity resolution, text classification on scale 12B messages, graph databases, graph analysis, data curation. ML/NLP, Clickhouse, Python, Scala, Elastic} 
 
 \section{Misc}
 \cvline{Translator}{\small Foundations for Programming Languages, John C. Mitchell. RCD press, 2010}
-\cvline{Running}{Marathon: \href{https://www.athlinks.com/event/3241/results/Event/1036173/Course/2307831/Bib/5668}{3h22m}, $\frac{1}{2}$ marathon: 1h38m, 10km: 40m38s}
+\cvline{Running}{Marathon: \href{https://www.athlinks.com/event/3241/results/Event/1036173/Course/2307831/Bib/5668}{3h22m}, $\frac{1}{2}$ marathon: 1h37m, 10km: 40m38s}
 \cvline{Chess}{Max Elo: 2118}
 
 

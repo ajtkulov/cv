@@ -1,1 +1,2 @@
 pdflatex cv.tex -jobname aitkulov_cv
+pdflatex cv.rev.tex -jobname aitkulov_cv_1
